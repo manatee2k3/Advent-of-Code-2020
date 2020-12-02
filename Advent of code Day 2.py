@@ -49,9 +49,9 @@ for lst in passw: #creating a function that will go through each password in the
     passw = password_regex.findall(lst[7:])
     password = passw[0] #pulling password into a variable
     min_n = min_n - 1 #removing a number so they work in the index
-    min_n = min_n - 1 #removing a number so they work in the index
+    max_n = max_n - 1 #removing a number so they work in the index
     
-    if password[min_n] == letter and password[max_n] != letter:
+    if password[min_n] == letter and password[max_n] != letter or password[max_n] == letter and password[min_n] != letter::
         f_count_two = f_count_two + 1
 
     
