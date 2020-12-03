@@ -10,6 +10,11 @@ You're off to a tropical island this year, saving christmas has been tough work 
 This code required the use of lists, comparason operators, boolean values, flow control statements, for loops and inputing data from a .txt file.
 
 DAY 2:
-Your flight to the tropical island leaves from a coastal town, to get there you hire a toboggan. When you get to the toboggan rental place you find they are having a nightmare with their password system. To try to debug the problem, they have created a list (your puzzle input) of passwords (according to the corrupted database) and the corporate policy when that password was set.Each line gives the password policy and then the password. The password policy indicates the lowest and highest number of times a given letter must appear for the password to be valid. For example, 1-3 a means that the password must contain a at least 1 time and at most 3 times. In Part 2 Each policy actually describes two positions in the password, where 1 means the first character, 2 means the second character, and so on. (Be careful; Toboggan Corporate Policies have no concept of "index zero"!) Exactly one of these positions must contain the given letter. Other occurrences of the letter are irrelevant for the purposes of policy enforcement.
+Your flight to the tropical island leaves from a coastal town, to get there you hire a toboggan. When you get to the toboggan rental place you find they are having a nightmare with their password system. To try to debug the problem, they have created a list (your puzzle input) of passwords. The password policy indicates the lowest and highest number of times a given letter must appear for the password to be valid. In Part 2 Each policy actually describes two positions in the password, where 1 means the first character, 2 means the second character, and so on.
 
 This code required the use of regular expressions, lists, indexes, comparason operators, boolean values, flow control statements, for loops and inputing data from a .txt file
+
+DAY 3: 
+You are off tobogganing! but the route to the airport is full of trees and the toboggan dosent have the best stearing. Using a map you must plot your route using the steering of the toboggan (3 right, 1 down), and see how many trees you will hit. Part 2 requires you to use a few different steering choices.
+
+This code required the use of; functions, lists, indexes, comparason operators, boolean values, flow control statements, for loops and inputing data from a .txt file
