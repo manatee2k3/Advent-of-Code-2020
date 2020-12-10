@@ -6,7 +6,7 @@ boarding_passes = []
 # Importing the boarding passes
 
 for line in data.splitlines():
-    boarding_passes.append(str(line))
+    boarding_passes.append((line))
 # formatting the boarding passes into a list of strings. 
 
 
@@ -79,7 +79,6 @@ def row_finder (boarding_pass, front, back): # Definition to look through the bo
         back = back
     # Same as above but for index 6
 
-    
     seats_row.append(int(back))
     # adds seat row to a list before reetting the values and looping to a new string. 
 
@@ -96,10 +95,10 @@ for boarding_pass in boarding_passes: # Going through each boarding pass in the 
     
 
 for boarding_pass in boarding_passes: # Going through again but only looking at the last 3 indexes for the column 
-    left = 1
-    right = 8
+    left = 0
+    right = 7
     if boarding_pass[7] == 'R':
-        left = right/2
+        left = (right - left) /2 + left
         right = right
         if boarding_pass[8] == 'R':
             left = (right - left) /2 + left
@@ -118,7 +117,7 @@ for boarding_pass in boarding_passes: # Going through again but only looking at 
     
     else:
         left = left
-        right = right/2
+        right = (right - left) /2 + left
         if boarding_pass[8] == 'R':
             left = (right - left) /2 + left
             right = right
@@ -132,8 +131,9 @@ for boarding_pass in boarding_passes: # Going through again but only looking at 
         else:
             left = left
             right = (right - left) /2 + left
-            
-    seats_column.append(int(left))
+
+    
+    seats_column.append(int(right))
     # adds seat column to a list before reetting the values and looping to a new string. 
 
 
@@ -150,7 +150,19 @@ while x < 867: # making a loop using x as the loop and the index
     x += 1
     # increasing x by 1 to go to the nexr string in each list
     
-
 seat_ID.sort() # sorting the list to find the largest number.
 print(seat_ID)
-      
+
+
+###   PART 2     ###
+
+#now you need to find the empty seat. the plane is full so shoudnt be difficult. 
+
+for i in range(len(seat_ID)): # looping a list the length of the seat_ID list
+    if seat_ID[i] + 1 != seat_ID[i+1]: # if the seat id matches the loop then its ok
+        print('Your seat is: ',  seat_ID[i] + 1) # if it dosent match then you have found the missing seat
+        break
+
+
+
+
