@@ -1,8 +1,6 @@
 # Advent-of-Code-2020
 Welcome to 2020 Advent of Code! well my attempts at working through it. I like the thought of accountability so plan on posting my completed code here. 
 
-
------------------------
 **Below is a list of the skills i used and learned while compleating Advent of code:**
   - lists
   - comparason operators,
@@ -13,7 +11,7 @@ Welcome to 2020 Advent of Code! well my attempts at working through it. I like t
   - indexes,
   - functions,
   - regular expressions,
-  
+ -------
 
 ### DAY 1:
 You're off to a tropical island this year, saving christmas has been tough work and you deserve a rest. however the elves need you to complete your expense reports before you head out. They want you to find the two entries that sum to 2020 and then multiply those two numbers together. Part 2 requires you to find three entries that sum to 2020 and multiply them together. 
